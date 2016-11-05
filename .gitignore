@@ -1,0 +1,58 @@
+# Mac OS X
+__MACOSX/
+.DS_Store*
+
+# Windows
+Thumbs.db
+
+# Генерируемые файлы Bitrix
+sitemap*.xml
+
+# Утилиты и конфиги
+web.config
+phpMyAdmin/
+.git/
+.ssh/
+.idea/
+
+# Тестовые разделы, логи, верстка, прототипы
+/v/
+/proto/
+nogit/
+test/
+logs/
+*.log
+
+# Файлы верификации в корне
+/google*.html
+/mailru-verification*.html
+/wmail_*.html
+/yandex_*.html
+
+# Ядро Bitrix
+/bitrix/
+
+# Папки и файлы Bitrix
+/upload/
+/*/upload/
+
+# Восстановление Bitrix
+/restore.php
+/.htaccess.restore
+/*.tar.*
+
+# Composer
+vendor/
+composer.phar
+
+# Исключаем на время разработки проекта, после закомментировать
+composer.lock
+
+# WebPack
+webpack-assets.json
+
+# Bower и Node.js
+/assets/build/
+/local/assets/build/
+node_modules/
+bower_components/
