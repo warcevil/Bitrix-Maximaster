@@ -15,7 +15,7 @@
 <body>
 <div class="admin-panel"><?$APPLICATION->ShowPanel()?></div>
 <header class="container header">
-	<div class="l-header__top-menu">
+	<nav class="l-header__top-menu">
 		<?$APPLICATION->IncludeComponent(
 			"bitrix:menu",
 			"top-menu",
@@ -32,6 +32,6 @@
 				"USE_EXT" => "N"
 			)
 		);?>
-	</div>
+	</nav>
 </header>
 <main class="container content">
