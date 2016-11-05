@@ -9,7 +9,7 @@ class SliderNews extends CBitrixComponent
     public function onPrepareComponentParams($arParams)
     {
         $arParams['PAGE_SIZE'] = (int)$arParams['PAGE_SIZE'] <= 0 ? 5 : (int)$arParams['PAGE_SIZE'];
-        $arParams['AUTO_PLAY'] = (int)$arParams['TIMEOUT'] <= 0 ? false :  true;
+        $arParams['AUTO_PLAY'] = (int)$arParams['TIMEOUT'] <= 0 ? false : true;
         $arParams['TIMEOUT'] = (int)$arParams['TIMEOUT'];
 
         return $arParams;
@@ -32,9 +32,16 @@ class SliderNews extends CBitrixComponent
             $arElement = $oElements->GetFields();
             $arResult[$arElement['ID']] = $arElement;
             $arResult[$arElement['ID']]['PICTURE_URL'] = CFile::GetPath($arElement['DETAIL_PICTURE']);
+            $arResult[$arElement['ID']]['PREVIEW_TEXT'] = $this->shortenText($arResult[$arElement['ID']]['PREVIEW_TEXT']);
         }
 
         $this->arResult['ELEMENTS'] = $arResult;
+    }
+
+    protected function shortenText($sText, $iLength = 300)
+    {
+        $sText = mb_strimwidth($sText, 0, $iLength, '...');
+        return $sText;
     }
 
     public function executeComponent()
