@@ -94,10 +94,6 @@
         font-weight: normal;
     }
 
-    .news-slider .slick-arrow:before {
-        display: none;
-    }
-
     .news-slider__text {
         text-indent: 0;
         padding: 15px 5px 30px 5px;
