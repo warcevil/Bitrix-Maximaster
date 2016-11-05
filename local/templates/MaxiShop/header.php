@@ -2,6 +2,7 @@
 	if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 	IncludeTemplateLangFile(__FILE__);
 	CJSCore::Init(array("jquery"));
+	use Bitrix\Main\Page\Asset;
 ?>
 <html>
 <head>
@@ -10,6 +11,9 @@
 	<?
 	$APPLICATION->SetAdditionalCSS("/local/css/main/reset.css");
 	$APPLICATION->SetAdditionalCSS("/local/css/main/bootstrap/bootstrap.min.css");
+	Asset::getInstance()->addJs('/local/js/slick/slick.min.js');
+	Asset::getInstance()->addCss('/local/js/slick/slick.css');
+	Asset::getInstance()->addCss('/local/js/slick/slick-theme.css');
 	?>
 </head>
 <body>
