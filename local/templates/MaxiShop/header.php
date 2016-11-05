@@ -7,10 +7,14 @@
 <head>
 	<?$APPLICATION->ShowHead();?>
 	<title><?$APPLICATION->ShowTitle()?></title>
+	<?
+	$APPLICATION->SetAdditionalCSS("/local/css/main/reset.css");
+	$APPLICATION->SetAdditionalCSS("/local/css/main/bootstrap/bootstrap.min.css");
+	?>
 </head>
 <body>
 <div class="admin-panel"><?$APPLICATION->ShowPanel()?></div>
-<header class="header">
+<header class="container header">
 	Шапка сайта
 </header>
-<main class="content">
+<main class="container content">
