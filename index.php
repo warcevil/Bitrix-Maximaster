@@ -10,7 +10,7 @@ $APPLICATION->SetTitle("Главная");
 		Array(
 			"CACHE_TIME" => "0",
 			"CACHE_TYPE" => "A",
-			"ID_BLOCK" => "1",
+			"IBLOCK_ID" => "1",
 			"PAGE_SIZE" => "5",
 			"TIMEOUT" => "2000"
 		)
