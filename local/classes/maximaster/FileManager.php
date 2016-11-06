@@ -11,9 +11,9 @@ class FileManager
     public function CreateFile()
     {
         $sFilePath = $_SERVER['DOCUMENT_ROOT'] . '/upload/one_agent/';
-        echo self::CountFiles($sFilePath);
+
         if (self::CountFiles($sFilePath) >= 10) {
-            return false;
+            return "";
         }
 
         $sDate = date('d.m.Y\_H;i;s');
@@ -39,7 +39,7 @@ class FileManager
 
         while ($sFile = $obDir->read()) {
             if (is_file($sDir . '/' . $sFile)) {
-                $iCount++;
+                ++$iCount;
             }
         }
 
