@@ -8,6 +8,13 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
+		"Каталог", 
+		"/shop", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
 		"О нас", 
 		"/about.php", 
 		Array(), 

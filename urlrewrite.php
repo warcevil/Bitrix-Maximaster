@@ -18,6 +18,12 @@ $arUrlRewrite = array(
 		"ID" => "bitrix:im.router",
 		"PATH" => "/desktop_app/router.php",
 	),
+	array(
+		"CONDITION" => "#^/shop/#",
+		"RULE" => "",
+		"ID" => "bitrix:catalog",
+		"PATH" => "/shop/index.php",
+	),
 );
 
 ?>
