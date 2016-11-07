@@ -122,7 +122,7 @@ $APPLICATION->SetTitle("shop");
 		"SECTION_COUNT_ELEMENTS" => "Y",
 		"SECTION_ID_VARIABLE" => "SECTION_ID",
 		"SECTION_TOP_DEPTH" => "2",
-		"SEF_FOLDER" => "/catalog/",
+		"SEF_FOLDER" => "/shop/",
 		"SEF_MODE" => "Y",
 		"SEF_URL_TEMPLATES" => Array("compare"=>"compare.php?action=#ACTION_CODE#","element"=>"#SECTION_ID#/#ELEMENT_CODE#/","section"=>"#SECTION_CODE#/","sections"=>"","smart_filter"=>"#SECTION_ID#/filter/#SMART_FILTER_PATH#/apply/"),
 		"SET_LAST_MODIFIED" => "N",
