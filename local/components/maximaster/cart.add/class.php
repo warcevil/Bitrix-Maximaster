@@ -16,8 +16,6 @@ class MaximasterCartAjax extends CBitrixComponent
 
     public function onPrepareComponentParams($arParams)
     {
-        $qw = $this->nId;
-
         $arParams['ID'] = intval($arParams['ID']);
         return $arParams;
     }
@@ -25,7 +23,7 @@ class MaximasterCartAjax extends CBitrixComponent
     public function AddProduct() {
         if (CModule::IncludeModule("catalog")) {
             $iProductId = Add2BasketByProductID(
-                $this->arParams['ID'],
+                $this->arParams["ID"],
                 1,
                 array(),
                 array()
