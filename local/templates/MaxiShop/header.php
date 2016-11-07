@@ -12,6 +12,12 @@
 	$APPLICATION->SetAdditionalCSS("/local/css/main/reset.css");
 	$APPLICATION->SetAdditionalCSS("/local/css/main/bootstrap/bootstrap.min.css");
 	Asset::getInstance()->addJs('/local/js/slick/slick.min.js');
+	Asset::getInstance()->addJs("/local/js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js");
+	Asset::getInstance()->addJs("/local/js/fancybox/source/jquery.fancybox.js");
+	Asset::getInstance()->addJs("/local/js/fancybox/source/jquery.fancybox.pack.js");
+	Asset::getInstance()->addJs(SITE_TEMPLATE_PATH."/js/basket_ajax.js");
+
+	Asset::getInstance()->addCss('/local/js/fancybox/source/jquery.fancybox.css');
 	Asset::getInstance()->addCss('/local/js/slick/slick.css');
 	Asset::getInstance()->addCss('/local/js/slick/slick-theme.css');
 	?>
