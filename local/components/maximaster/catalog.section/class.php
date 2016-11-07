@@ -14,7 +14,6 @@ class MaximasterCatalogSection extends CBitrixComponent
     }
 
     public function GetItems() {
-
         $CIBlockElement = new \CIBlockElement();
 
         echo $this->arParams["SECTION_CODE"];
@@ -24,11 +23,12 @@ class MaximasterCatalogSection extends CBitrixComponent
             'SECTION_CODE' => $this->arParams["SECTION_CODE"],
             'INCLUDE_SUBSECTIONS' => 'Y'
         );
-
+        CModule::IncludeModule('iblock');
+        CModule::IncludeModule('sale');
         $oElements = $CIBlockElement->GetList([], $arFilter);
+
         while ($arElement = $oElements->GetNext()) {
             $arPrice = \CCatalogProduct::GetOptimalPrice($arElement['ID']);
-            //echo '<pre>', var_export($arPrice) , '</pre>';
             $arElement['DISCOUNT_PRICE'] = $arPrice['DISCOUNT_PRICE'];
             $arElement['VIEW_PRICE'] = SaleFormatCurrency($arPrice['DISCOUNT_PRICE'], $arPrice['PRICE']['CURRENCY']);
 

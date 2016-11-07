@@ -4,7 +4,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
     die();
 }
 
-class SliderNews extends CBitrixComponent
+class MaximasterCatalogSectionList extends CBitrixComponent
 {
     public function onPrepareComponentParams($arParams)
     {
@@ -34,11 +34,11 @@ class SliderNews extends CBitrixComponent
 
         $arFilter["ID"] = $this->arParams["SECTION_ID"];
         $arFilter = Array('IBLOCK_ID' => $this->arParams["IBLOCK_ID"], 'SECTION_ID' => $this->arParams['SECTION_ID']);
+        CModule::IncludeModule('iblock');
         $oSections = CIBlockSection::GetList(
             [],
             $arFilter
         );
-
         while ($arSection = $oSections->GetNext()) {
             $arSections[$arSection['ID']]['ID'] = $arSection['ID'];
             $arSections[$arSection['ID']]['EDIT_LINK'] = $arSection['EDIT_LINK'];
