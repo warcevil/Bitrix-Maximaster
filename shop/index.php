@@ -68,7 +68,7 @@ $APPLICATION->SetTitle("shop");
 		"GIFTS_SHOW_NAME" => "Y",
 		"GIFTS_SHOW_OLD_PRICE" => "Y",
 		"HIDE_NOT_AVAILABLE" => "N",
-		"IBLOCK_ID" => "3",
+		"IBLOCK_ID" => "4",
 		"IBLOCK_TYPE" => "catalog",
 		"INCLUDE_SUBSECTIONS" => "Y",
 		"INSTANT_RELOAD" => "N",

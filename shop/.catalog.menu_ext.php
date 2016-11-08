@@ -27,8 +27,8 @@ if(CModule::IncludeModule('iblock'))
 				"SECTION_PAGE_URL" => $arIBlock['SECTION_PAGE_URL'],
 				"DETAIL_PAGE_URL" => $arIBlock['DETAIL_PAGE_URL'],
 				"IBLOCK_TYPE" => $arIBlock['IBLOCK_TYPE_ID'],
-				"IBLOCK_ID" => $arIBlock['ID'],
-				"DEPTH_LEVEL" => "2",
+				"IBLOCK_ID" => 4,
+				"DEPTH_LEVEL" => "4",
 				"CACHE_TYPE" => "N",
 			), false, Array('HIDE_ICONS' => 'Y'));
 		}
