@@ -1,15 +1,15 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"Главная", 
-		"/", 
+		"Каталог", 
+		"/shop/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"О нас", 
-		"/about.php", 
+		"Бренды", 
+		"/brands/",
 		Array(), 
 		Array(), 
 		"" 
