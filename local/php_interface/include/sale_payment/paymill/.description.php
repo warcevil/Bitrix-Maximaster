@@ -14,6 +14,12 @@ $arPSCorrespondence = array(
 				"DESCR" => "Indicates whether the transaction should be processed as a test transaction (any value)",
 				"VALUE" => "",
 				"TYPE" => ""
-			)
+			),
+		"SUCCESS_URL" => array(
+			"NAME" => "Success url",
+			"DESCR" => "Страница, на которую будет редирект после успешной оплаты",
+			"VALUE" => "",
+			"TYPE" => ""
+		)
 	);
 ?>
