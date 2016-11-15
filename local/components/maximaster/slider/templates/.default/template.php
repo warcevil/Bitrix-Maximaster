@@ -1,3 +1,4 @@
+<? $this->setFrameMode(true) ?>
 <?if (!empty($arResult)):?>
 <div class="news-slider js-news-slider" data-slick="<?= $arResult['SLICK'] ?>">
     <? foreach ($arResult['ELEMENTS'] as $arElement): ?>

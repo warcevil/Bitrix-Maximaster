@@ -49,14 +49,14 @@
 			"catalog-menu",
 			Array(
 				"ALLOW_MULTI_SELECT" => "N",
-				"CHILD_MENU_TYPE" => "",
+				"CHILD_MENU_TYPE" => "catalog",
 				"DELAY" => "N",
-				"MAX_LEVEL" => "1",
+				"MAX_LEVEL" => "2",
 				"MENU_CACHE_GET_VARS" => array(""),
-				"MENU_CACHE_TIME" => "3600",
+				"MENU_CACHE_TIME" => "0",
 				"MENU_CACHE_TYPE" => "N",
 				"MENU_CACHE_USE_GROUPS" => "Y",
-				"ROOT_MENU_TYPE" => "catalog",
+				"ROOT_MENU_TYPE" => "shop",
 				"USE_EXT" => "Y"
 			)
 		);?>

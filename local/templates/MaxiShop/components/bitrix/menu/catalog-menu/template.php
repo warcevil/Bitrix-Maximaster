@@ -1,15 +1,8 @@
-<?
+<? $this->setFrameMode(); ?>
 
-if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
-    die();
-}
-
-?>
 <? if (!empty($arResult)): ?>
     <?
-
     $iPreviousLevel = 0;
-
     ?>
     <div class="catalog-menu">
 
@@ -44,7 +37,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) {
             <? endif ?>
 
                 <li class="catalog-menu__item catalog-menu__item_item-<?= ($arItem['DEPTH_LEVEL'] < 4) ? $arItem['DEPTH_LEVEL'] : 4;  ?>  <?=($arItem["SELECTED"])? 'catalog-menu__item_selected-'.$arItem['DEPTH_LEVEL'] : ''?>">
-                    <a href="<?=$arItem['LINK']?>"><?= $arItem['TEXT'] ?></a>
+                    <a href="<?=$arItem['LINK']?>"><?= $arItem['TEXT']?></a>
 
             <? $iPreviousLevel = $arItem['DEPTH_LEVEL'] ?>
         <? endforeach ?>

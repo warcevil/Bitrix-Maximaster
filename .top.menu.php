@@ -1,7 +1,7 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"Главная", 
+		"Главная",
 		"/", 
 		Array(), 
 		Array(), 
